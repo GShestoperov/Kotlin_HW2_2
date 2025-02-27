@@ -7,10 +7,10 @@ class WallService () {
     private var nextPostId: Long = 1
 
     fun addPost(post: Post): Post {
-        post.id = nextPostId
+        val newPost = post.copy(id = nextPostId)
         nextPostId++
 
-        postArr += post
+        postArr += newPost
 
         return postArr.last()
     }
