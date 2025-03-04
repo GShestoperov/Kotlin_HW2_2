@@ -34,6 +34,16 @@ class WallService () {
         return true
     }
 
+    fun getPost(id: Long): Post? {
+        for (item in postArr) {
+            if (item.id == id) {
+                return item
+            }
+        }
+
+        return null
+    }
+
     override fun toString(): String {
         var str: String = "Посты на стене: \n"
 

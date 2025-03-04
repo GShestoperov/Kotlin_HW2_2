@@ -7,4 +7,7 @@ data class Comments(
     val canClose: Boolean = false,
     val canOpen: Boolean = false
 ) {
+    override fun toString(): String {
+        return "Comments(count=$count, canPost=$canPost, groupsCanPost=$groupsCanPost, canClose=$canClose, canOpen=$canOpen)"
+    }
 }
