@@ -21,7 +21,8 @@ fun main() {
         id = 1,
         ownerId = 10,
         fromId = 10,
-        date = 250
+        date = 250,
+        original = wall.getPost(id = 2)
     ))
 
     println(wall)
